@@ -28,35 +28,35 @@
 
 namespace unary {
 
-class Translate final {
+class Emoji final {
  public:
   static constexpr char const* service_full_name() {
-    return "unary.Translate";
+    return "unary.Emoji";
   }
   class StubInterface {
    public:
     virtual ~StubInterface() {}
-    virtual ::grpc::Status TranslateMsg(::grpc::ClientContext* context, const ::unary::TranslateRequest& request, ::unary::TranslateReply* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::unary::TranslateReply>> AsyncTranslateMsg(::grpc::ClientContext* context, const ::unary::TranslateRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::unary::TranslateReply>>(AsyncTranslateMsgRaw(context, request, cq));
+    virtual ::grpc::Status convertToEmoji(::grpc::ClientContext* context, const ::unary::EmojiRequest& request, ::unary::EmojiReply* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::unary::EmojiReply>> AsyncconvertToEmoji(::grpc::ClientContext* context, const ::unary::EmojiRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::unary::EmojiReply>>(AsyncconvertToEmojiRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::unary::TranslateReply>> PrepareAsyncTranslateMsg(::grpc::ClientContext* context, const ::unary::TranslateRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::unary::TranslateReply>>(PrepareAsyncTranslateMsgRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::unary::EmojiReply>> PrepareAsyncconvertToEmoji(::grpc::ClientContext* context, const ::unary::EmojiRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::unary::EmojiReply>>(PrepareAsyncconvertToEmojiRaw(context, request, cq));
     }
     class experimental_async_interface {
      public:
       virtual ~experimental_async_interface() {}
-      virtual void TranslateMsg(::grpc::ClientContext* context, const ::unary::TranslateRequest* request, ::unary::TranslateReply* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void TranslateMsg(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::unary::TranslateReply* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void convertToEmoji(::grpc::ClientContext* context, const ::unary::EmojiRequest* request, ::unary::EmojiReply* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void convertToEmoji(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::unary::EmojiReply* response, std::function<void(::grpc::Status)>) = 0;
       #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
-      virtual void TranslateMsg(::grpc::ClientContext* context, const ::unary::TranslateRequest* request, ::unary::TranslateReply* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void convertToEmoji(::grpc::ClientContext* context, const ::unary::EmojiRequest* request, ::unary::EmojiReply* response, ::grpc::ClientUnaryReactor* reactor) = 0;
       #else
-      virtual void TranslateMsg(::grpc::ClientContext* context, const ::unary::TranslateRequest* request, ::unary::TranslateReply* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void convertToEmoji(::grpc::ClientContext* context, const ::unary::EmojiRequest* request, ::unary::EmojiReply* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       #endif
       #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
-      virtual void TranslateMsg(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::unary::TranslateReply* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void convertToEmoji(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::unary::EmojiReply* response, ::grpc::ClientUnaryReactor* reactor) = 0;
       #else
-      virtual void TranslateMsg(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::unary::TranslateReply* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void convertToEmoji(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::unary::EmojiReply* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       #endif
     };
     #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
@@ -67,33 +67,33 @@ class Translate final {
     #endif
     virtual class experimental_async_interface* experimental_async() { return nullptr; }
   private:
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::unary::TranslateReply>* AsyncTranslateMsgRaw(::grpc::ClientContext* context, const ::unary::TranslateRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::unary::TranslateReply>* PrepareAsyncTranslateMsgRaw(::grpc::ClientContext* context, const ::unary::TranslateRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::unary::EmojiReply>* AsyncconvertToEmojiRaw(::grpc::ClientContext* context, const ::unary::EmojiRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::unary::EmojiReply>* PrepareAsyncconvertToEmojiRaw(::grpc::ClientContext* context, const ::unary::EmojiRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
   class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status TranslateMsg(::grpc::ClientContext* context, const ::unary::TranslateRequest& request, ::unary::TranslateReply* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::unary::TranslateReply>> AsyncTranslateMsg(::grpc::ClientContext* context, const ::unary::TranslateRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::unary::TranslateReply>>(AsyncTranslateMsgRaw(context, request, cq));
+    ::grpc::Status convertToEmoji(::grpc::ClientContext* context, const ::unary::EmojiRequest& request, ::unary::EmojiReply* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::unary::EmojiReply>> AsyncconvertToEmoji(::grpc::ClientContext* context, const ::unary::EmojiRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::unary::EmojiReply>>(AsyncconvertToEmojiRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::unary::TranslateReply>> PrepareAsyncTranslateMsg(::grpc::ClientContext* context, const ::unary::TranslateRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::unary::TranslateReply>>(PrepareAsyncTranslateMsgRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::unary::EmojiReply>> PrepareAsyncconvertToEmoji(::grpc::ClientContext* context, const ::unary::EmojiRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::unary::EmojiReply>>(PrepareAsyncconvertToEmojiRaw(context, request, cq));
     }
     class experimental_async final :
       public StubInterface::experimental_async_interface {
      public:
-      void TranslateMsg(::grpc::ClientContext* context, const ::unary::TranslateRequest* request, ::unary::TranslateReply* response, std::function<void(::grpc::Status)>) override;
-      void TranslateMsg(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::unary::TranslateReply* response, std::function<void(::grpc::Status)>) override;
+      void convertToEmoji(::grpc::ClientContext* context, const ::unary::EmojiRequest* request, ::unary::EmojiReply* response, std::function<void(::grpc::Status)>) override;
+      void convertToEmoji(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::unary::EmojiReply* response, std::function<void(::grpc::Status)>) override;
       #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
-      void TranslateMsg(::grpc::ClientContext* context, const ::unary::TranslateRequest* request, ::unary::TranslateReply* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void convertToEmoji(::grpc::ClientContext* context, const ::unary::EmojiRequest* request, ::unary::EmojiReply* response, ::grpc::ClientUnaryReactor* reactor) override;
       #else
-      void TranslateMsg(::grpc::ClientContext* context, const ::unary::TranslateRequest* request, ::unary::TranslateReply* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void convertToEmoji(::grpc::ClientContext* context, const ::unary::EmojiRequest* request, ::unary::EmojiReply* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       #endif
       #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
-      void TranslateMsg(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::unary::TranslateReply* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void convertToEmoji(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::unary::EmojiReply* response, ::grpc::ClientUnaryReactor* reactor) override;
       #else
-      void TranslateMsg(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::unary::TranslateReply* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void convertToEmoji(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::unary::EmojiReply* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       #endif
      private:
       friend class Stub;
@@ -106,9 +106,9 @@ class Translate final {
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
     class experimental_async async_stub_{this};
-    ::grpc::ClientAsyncResponseReader< ::unary::TranslateReply>* AsyncTranslateMsgRaw(::grpc::ClientContext* context, const ::unary::TranslateRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::unary::TranslateReply>* PrepareAsyncTranslateMsgRaw(::grpc::ClientContext* context, const ::unary::TranslateRequest& request, ::grpc::CompletionQueue* cq) override;
-    const ::grpc::internal::RpcMethod rpcmethod_TranslateMsg_;
+    ::grpc::ClientAsyncResponseReader< ::unary::EmojiReply>* AsyncconvertToEmojiRaw(::grpc::ClientContext* context, const ::unary::EmojiRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::unary::EmojiReply>* PrepareAsyncconvertToEmojiRaw(::grpc::ClientContext* context, const ::unary::EmojiRequest& request, ::grpc::CompletionQueue* cq) override;
+    const ::grpc::internal::RpcMethod rpcmethod_convertToEmoji_;
   };
   static std::unique_ptr<Stub> NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
 
@@ -116,124 +116,124 @@ class Translate final {
    public:
     Service();
     virtual ~Service();
-    virtual ::grpc::Status TranslateMsg(::grpc::ServerContext* context, const ::unary::TranslateRequest* request, ::unary::TranslateReply* response);
+    virtual ::grpc::Status convertToEmoji(::grpc::ServerContext* context, const ::unary::EmojiRequest* request, ::unary::EmojiReply* response);
   };
   template <class BaseClass>
-  class WithAsyncMethod_TranslateMsg : public BaseClass {
+  class WithAsyncMethod_convertToEmoji : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithAsyncMethod_TranslateMsg() {
+    WithAsyncMethod_convertToEmoji() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_TranslateMsg() override {
+    ~WithAsyncMethod_convertToEmoji() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status TranslateMsg(::grpc::ServerContext* /*context*/, const ::unary::TranslateRequest* /*request*/, ::unary::TranslateReply* /*response*/) override {
+    ::grpc::Status convertToEmoji(::grpc::ServerContext* /*context*/, const ::unary::EmojiRequest* /*request*/, ::unary::EmojiReply* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestTranslateMsg(::grpc::ServerContext* context, ::unary::TranslateRequest* request, ::grpc::ServerAsyncResponseWriter< ::unary::TranslateReply>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestconvertToEmoji(::grpc::ServerContext* context, ::unary::EmojiRequest* request, ::grpc::ServerAsyncResponseWriter< ::unary::EmojiReply>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(0, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
-  typedef WithAsyncMethod_TranslateMsg<Service > AsyncService;
+  typedef WithAsyncMethod_convertToEmoji<Service > AsyncService;
   template <class BaseClass>
-  class ExperimentalWithCallbackMethod_TranslateMsg : public BaseClass {
+  class ExperimentalWithCallbackMethod_convertToEmoji : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    ExperimentalWithCallbackMethod_TranslateMsg() {
+    ExperimentalWithCallbackMethod_convertToEmoji() {
     #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
       ::grpc::Service::
     #else
       ::grpc::Service::experimental().
     #endif
         MarkMethodCallback(0,
-          new ::grpc_impl::internal::CallbackUnaryHandler< ::unary::TranslateRequest, ::unary::TranslateReply>(
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::unary::EmojiRequest, ::unary::EmojiReply>(
             [this](
     #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
                    ::grpc::CallbackServerContext*
     #else
                    ::grpc::experimental::CallbackServerContext*
     #endif
-                     context, const ::unary::TranslateRequest* request, ::unary::TranslateReply* response) { return this->TranslateMsg(context, request, response); }));}
-    void SetMessageAllocatorFor_TranslateMsg(
-        ::grpc::experimental::MessageAllocator< ::unary::TranslateRequest, ::unary::TranslateReply>* allocator) {
+                     context, const ::unary::EmojiRequest* request, ::unary::EmojiReply* response) { return this->convertToEmoji(context, request, response); }));}
+    void SetMessageAllocatorFor_convertToEmoji(
+        ::grpc::experimental::MessageAllocator< ::unary::EmojiRequest, ::unary::EmojiReply>* allocator) {
     #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(0);
     #else
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(0);
     #endif
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::unary::TranslateRequest, ::unary::TranslateReply>*>(handler)
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::unary::EmojiRequest, ::unary::EmojiReply>*>(handler)
               ->SetMessageAllocator(allocator);
     }
-    ~ExperimentalWithCallbackMethod_TranslateMsg() override {
+    ~ExperimentalWithCallbackMethod_convertToEmoji() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status TranslateMsg(::grpc::ServerContext* /*context*/, const ::unary::TranslateRequest* /*request*/, ::unary::TranslateReply* /*response*/) override {
+    ::grpc::Status convertToEmoji(::grpc::ServerContext* /*context*/, const ::unary::EmojiRequest* /*request*/, ::unary::EmojiReply* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
-    virtual ::grpc::ServerUnaryReactor* TranslateMsg(
-      ::grpc::CallbackServerContext* /*context*/, const ::unary::TranslateRequest* /*request*/, ::unary::TranslateReply* /*response*/)
+    virtual ::grpc::ServerUnaryReactor* convertToEmoji(
+      ::grpc::CallbackServerContext* /*context*/, const ::unary::EmojiRequest* /*request*/, ::unary::EmojiReply* /*response*/)
     #else
-    virtual ::grpc::experimental::ServerUnaryReactor* TranslateMsg(
-      ::grpc::experimental::CallbackServerContext* /*context*/, const ::unary::TranslateRequest* /*request*/, ::unary::TranslateReply* /*response*/)
+    virtual ::grpc::experimental::ServerUnaryReactor* convertToEmoji(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::unary::EmojiRequest* /*request*/, ::unary::EmojiReply* /*response*/)
     #endif
       { return nullptr; }
   };
   #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
-  typedef ExperimentalWithCallbackMethod_TranslateMsg<Service > CallbackService;
+  typedef ExperimentalWithCallbackMethod_convertToEmoji<Service > CallbackService;
   #endif
 
-  typedef ExperimentalWithCallbackMethod_TranslateMsg<Service > ExperimentalCallbackService;
+  typedef ExperimentalWithCallbackMethod_convertToEmoji<Service > ExperimentalCallbackService;
   template <class BaseClass>
-  class WithGenericMethod_TranslateMsg : public BaseClass {
+  class WithGenericMethod_convertToEmoji : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithGenericMethod_TranslateMsg() {
+    WithGenericMethod_convertToEmoji() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_TranslateMsg() override {
+    ~WithGenericMethod_convertToEmoji() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status TranslateMsg(::grpc::ServerContext* /*context*/, const ::unary::TranslateRequest* /*request*/, ::unary::TranslateReply* /*response*/) override {
+    ::grpc::Status convertToEmoji(::grpc::ServerContext* /*context*/, const ::unary::EmojiRequest* /*request*/, ::unary::EmojiReply* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
   template <class BaseClass>
-  class WithRawMethod_TranslateMsg : public BaseClass {
+  class WithRawMethod_convertToEmoji : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawMethod_TranslateMsg() {
+    WithRawMethod_convertToEmoji() {
       ::grpc::Service::MarkMethodRaw(0);
     }
-    ~WithRawMethod_TranslateMsg() override {
+    ~WithRawMethod_convertToEmoji() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status TranslateMsg(::grpc::ServerContext* /*context*/, const ::unary::TranslateRequest* /*request*/, ::unary::TranslateReply* /*response*/) override {
+    ::grpc::Status convertToEmoji(::grpc::ServerContext* /*context*/, const ::unary::EmojiRequest* /*request*/, ::unary::EmojiReply* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestTranslateMsg(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestconvertToEmoji(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(0, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
-  class ExperimentalWithRawCallbackMethod_TranslateMsg : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_convertToEmoji : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    ExperimentalWithRawCallbackMethod_TranslateMsg() {
+    ExperimentalWithRawCallbackMethod_convertToEmoji() {
     #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
       ::grpc::Service::
     #else
@@ -247,55 +247,55 @@ class Translate final {
     #else
                    ::grpc::experimental::CallbackServerContext*
     #endif
-                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->TranslateMsg(context, request, response); }));
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->convertToEmoji(context, request, response); }));
     }
-    ~ExperimentalWithRawCallbackMethod_TranslateMsg() override {
+    ~ExperimentalWithRawCallbackMethod_convertToEmoji() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status TranslateMsg(::grpc::ServerContext* /*context*/, const ::unary::TranslateRequest* /*request*/, ::unary::TranslateReply* /*response*/) override {
+    ::grpc::Status convertToEmoji(::grpc::ServerContext* /*context*/, const ::unary::EmojiRequest* /*request*/, ::unary::EmojiReply* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
-    virtual ::grpc::ServerUnaryReactor* TranslateMsg(
+    virtual ::grpc::ServerUnaryReactor* convertToEmoji(
       ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
     #else
-    virtual ::grpc::experimental::ServerUnaryReactor* TranslateMsg(
+    virtual ::grpc::experimental::ServerUnaryReactor* convertToEmoji(
       ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
     #endif
       { return nullptr; }
   };
   template <class BaseClass>
-  class WithStreamedUnaryMethod_TranslateMsg : public BaseClass {
+  class WithStreamedUnaryMethod_convertToEmoji : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithStreamedUnaryMethod_TranslateMsg() {
+    WithStreamedUnaryMethod_convertToEmoji() {
       ::grpc::Service::MarkMethodStreamed(0,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::unary::TranslateRequest, ::unary::TranslateReply>(
+          ::unary::EmojiRequest, ::unary::EmojiReply>(
             [this](::grpc_impl::ServerContext* context,
                    ::grpc_impl::ServerUnaryStreamer<
-                     ::unary::TranslateRequest, ::unary::TranslateReply>* streamer) {
-                       return this->StreamedTranslateMsg(context,
+                     ::unary::EmojiRequest, ::unary::EmojiReply>* streamer) {
+                       return this->StreamedconvertToEmoji(context,
                          streamer);
                   }));
     }
-    ~WithStreamedUnaryMethod_TranslateMsg() override {
+    ~WithStreamedUnaryMethod_convertToEmoji() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status TranslateMsg(::grpc::ServerContext* /*context*/, const ::unary::TranslateRequest* /*request*/, ::unary::TranslateReply* /*response*/) override {
+    ::grpc::Status convertToEmoji(::grpc::ServerContext* /*context*/, const ::unary::EmojiRequest* /*request*/, ::unary::EmojiReply* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedTranslateMsg(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::unary::TranslateRequest,::unary::TranslateReply>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedconvertToEmoji(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::unary::EmojiRequest,::unary::EmojiReply>* server_unary_streamer) = 0;
   };
-  typedef WithStreamedUnaryMethod_TranslateMsg<Service > StreamedUnaryService;
+  typedef WithStreamedUnaryMethod_convertToEmoji<Service > StreamedUnaryService;
   typedef Service SplitStreamedService;
-  typedef WithStreamedUnaryMethod_TranslateMsg<Service > StreamedService;
+  typedef WithStreamedUnaryMethod_convertToEmoji<Service > StreamedService;
 };
 
 }  // namespace unary
