@@ -15,42 +15,42 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 namespace unary {
-class TranslateRequestDefaultTypeInternal {
+class EmojiRequestDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TranslateRequest> _instance;
-} _TranslateRequest_default_instance_;
-class TranslateReplyDefaultTypeInternal {
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<EmojiRequest> _instance;
+} _EmojiRequest_default_instance_;
+class EmojiReplyDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TranslateReply> _instance;
-} _TranslateReply_default_instance_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<EmojiReply> _instance;
+} _EmojiReply_default_instance_;
 }  // namespace unary
-static void InitDefaultsscc_info_TranslateReply_unary_2eproto() {
+static void InitDefaultsscc_info_EmojiReply_unary_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::unary::_TranslateReply_default_instance_;
-    new (ptr) ::unary::TranslateReply();
+    void* ptr = &::unary::_EmojiReply_default_instance_;
+    new (ptr) ::unary::EmojiReply();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::unary::TranslateReply::InitAsDefaultInstance();
+  ::unary::EmojiReply::InitAsDefaultInstance();
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TranslateReply_unary_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_TranslateReply_unary_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EmojiReply_unary_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_EmojiReply_unary_2eproto}, {}};
 
-static void InitDefaultsscc_info_TranslateRequest_unary_2eproto() {
+static void InitDefaultsscc_info_EmojiRequest_unary_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::unary::_TranslateRequest_default_instance_;
-    new (ptr) ::unary::TranslateRequest();
+    void* ptr = &::unary::_EmojiRequest_default_instance_;
+    new (ptr) ::unary::EmojiRequest();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::unary::TranslateRequest::InitAsDefaultInstance();
+  ::unary::EmojiRequest::InitAsDefaultInstance();
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TranslateRequest_unary_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_TranslateRequest_unary_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EmojiRequest_unary_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_EmojiRequest_unary_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_unary_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_unary_2eproto = nullptr;
@@ -58,44 +58,43 @@ static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_s
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_unary_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::unary::TranslateRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::unary::EmojiRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::unary::TranslateRequest, originalmsg_),
+  PROTOBUF_FIELD_OFFSET(::unary::EmojiRequest, message_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::unary::TranslateReply, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::unary::EmojiReply, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::unary::TranslateReply, translatedmsg_),
+  PROTOBUF_FIELD_OFFSET(::unary::EmojiReply, emoji_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::unary::TranslateRequest)},
-  { 6, -1, sizeof(::unary::TranslateReply)},
+  { 0, -1, sizeof(::unary::EmojiRequest)},
+  { 6, -1, sizeof(::unary::EmojiReply)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::unary::_TranslateRequest_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::unary::_TranslateReply_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::unary::_EmojiRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::unary::_EmojiReply_default_instance_),
 };
 
 const char descriptor_table_protodef_unary_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\013unary.proto\022\005unary\"\'\n\020TranslateRequest"
-  "\022\023\n\013originalMsg\030\001 \001(\t\"\'\n\016TranslateReply\022"
-  "\025\n\rtranslatedMsg\030\001 \001(\t2M\n\tTranslate\022@\n\014T"
-  "ranslateMsg\022\027.unary.TranslateRequest\032\025.u"
-  "nary.TranslateReply\"\000b\006proto3"
+  "\n\013unary.proto\022\005unary\"\037\n\014EmojiRequest\022\017\n\007"
+  "message\030\001 \001(\t\"\033\n\nEmojiReply\022\r\n\005emoji\030\001 \001"
+  "(\t2C\n\005Emoji\022:\n\016convertToEmoji\022\023.unary.Em"
+  "ojiRequest\032\021.unary.EmojiReply\"\000b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_unary_2eproto_deps[1] = {
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_unary_2eproto_sccs[2] = {
-  &scc_info_TranslateReply_unary_2eproto.base,
-  &scc_info_TranslateRequest_unary_2eproto.base,
+  &scc_info_EmojiReply_unary_2eproto.base,
+  &scc_info_EmojiRequest_unary_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_unary_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_unary_2eproto = {
-  false, false, descriptor_table_protodef_unary_2eproto, "unary.proto", 189,
+  false, false, descriptor_table_protodef_unary_2eproto, "unary.proto", 159,
   &descriptor_table_unary_2eproto_once, descriptor_table_unary_2eproto_sccs, descriptor_table_unary_2eproto_deps, 2, 0,
   schemas, file_default_instances, TableStruct_unary_2eproto::offsets,
   file_level_metadata_unary_2eproto, 2, file_level_enum_descriptors_unary_2eproto, file_level_service_descriptors_unary_2eproto,
@@ -107,71 +106,71 @@ namespace unary {
 
 // ===================================================================
 
-void TranslateRequest::InitAsDefaultInstance() {
+void EmojiRequest::InitAsDefaultInstance() {
 }
-class TranslateRequest::_Internal {
+class EmojiRequest::_Internal {
  public:
 };
 
-TranslateRequest::TranslateRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+EmojiRequest::EmojiRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:unary.TranslateRequest)
+  // @@protoc_insertion_point(arena_constructor:unary.EmojiRequest)
 }
-TranslateRequest::TranslateRequest(const TranslateRequest& from)
+EmojiRequest::EmojiRequest(const EmojiRequest& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  originalmsg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_originalmsg().empty()) {
-    originalmsg_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_originalmsg(),
+  message_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_message().empty()) {
+    message_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_message(),
       GetArena());
   }
-  // @@protoc_insertion_point(copy_constructor:unary.TranslateRequest)
+  // @@protoc_insertion_point(copy_constructor:unary.EmojiRequest)
 }
 
-void TranslateRequest::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TranslateRequest_unary_2eproto.base);
-  originalmsg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+void EmojiRequest::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_EmojiRequest_unary_2eproto.base);
+  message_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-TranslateRequest::~TranslateRequest() {
-  // @@protoc_insertion_point(destructor:unary.TranslateRequest)
+EmojiRequest::~EmojiRequest() {
+  // @@protoc_insertion_point(destructor:unary.EmojiRequest)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void TranslateRequest::SharedDtor() {
+void EmojiRequest::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  originalmsg_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  message_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-void TranslateRequest::ArenaDtor(void* object) {
-  TranslateRequest* _this = reinterpret_cast< TranslateRequest* >(object);
+void EmojiRequest::ArenaDtor(void* object) {
+  EmojiRequest* _this = reinterpret_cast< EmojiRequest* >(object);
   (void)_this;
 }
-void TranslateRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+void EmojiRequest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
-void TranslateRequest::SetCachedSize(int size) const {
+void EmojiRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const TranslateRequest& TranslateRequest::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TranslateRequest_unary_2eproto.base);
+const EmojiRequest& EmojiRequest::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_EmojiRequest_unary_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void TranslateRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:unary.TranslateRequest)
+void EmojiRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:unary.EmojiRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  originalmsg_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  message_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TranslateRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* EmojiRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
@@ -179,12 +178,12 @@ const char* TranslateRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // string originalMsg = 1;
+      // string message = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_originalmsg();
+          auto str = _internal_mutable_message();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "unary.TranslateRequest.originalMsg"));
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "unary.EmojiRequest.message"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -210,43 +209,43 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* TranslateRequest::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* EmojiRequest::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:unary.TranslateRequest)
+  // @@protoc_insertion_point(serialize_to_array_start:unary.EmojiRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // string originalMsg = 1;
-  if (this->originalmsg().size() > 0) {
+  // string message = 1;
+  if (this->message().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_originalmsg().data(), static_cast<int>(this->_internal_originalmsg().length()),
+      this->_internal_message().data(), static_cast<int>(this->_internal_message().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "unary.TranslateRequest.originalMsg");
+      "unary.EmojiRequest.message");
     target = stream->WriteStringMaybeAliased(
-        1, this->_internal_originalmsg(), target);
+        1, this->_internal_message(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:unary.TranslateRequest)
+  // @@protoc_insertion_point(serialize_to_array_end:unary.EmojiRequest)
   return target;
 }
 
-size_t TranslateRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:unary.TranslateRequest)
+size_t EmojiRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:unary.EmojiRequest)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string originalMsg = 1;
-  if (this->originalmsg().size() > 0) {
+  // string message = 1;
+  if (this->message().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_originalmsg());
+        this->_internal_message());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -258,129 +257,129 @@ size_t TranslateRequest::ByteSizeLong() const {
   return total_size;
 }
 
-void TranslateRequest::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:unary.TranslateRequest)
+void EmojiRequest::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:unary.EmojiRequest)
   GOOGLE_DCHECK_NE(&from, this);
-  const TranslateRequest* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TranslateRequest>(
+  const EmojiRequest* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<EmojiRequest>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:unary.TranslateRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:unary.EmojiRequest)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:unary.TranslateRequest)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:unary.EmojiRequest)
     MergeFrom(*source);
   }
 }
 
-void TranslateRequest::MergeFrom(const TranslateRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:unary.TranslateRequest)
+void EmojiRequest::MergeFrom(const EmojiRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:unary.EmojiRequest)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.originalmsg().size() > 0) {
-    _internal_set_originalmsg(from._internal_originalmsg());
+  if (from.message().size() > 0) {
+    _internal_set_message(from._internal_message());
   }
 }
 
-void TranslateRequest::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:unary.TranslateRequest)
+void EmojiRequest::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:unary.EmojiRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void TranslateRequest::CopyFrom(const TranslateRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:unary.TranslateRequest)
+void EmojiRequest::CopyFrom(const EmojiRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:unary.EmojiRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool TranslateRequest::IsInitialized() const {
+bool EmojiRequest::IsInitialized() const {
   return true;
 }
 
-void TranslateRequest::InternalSwap(TranslateRequest* other) {
+void EmojiRequest::InternalSwap(EmojiRequest* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  originalmsg_.Swap(&other->originalmsg_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  message_.Swap(&other->message_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata TranslateRequest::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata EmojiRequest::GetMetadata() const {
   return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-void TranslateReply::InitAsDefaultInstance() {
+void EmojiReply::InitAsDefaultInstance() {
 }
-class TranslateReply::_Internal {
+class EmojiReply::_Internal {
  public:
 };
 
-TranslateReply::TranslateReply(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+EmojiReply::EmojiReply(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:unary.TranslateReply)
+  // @@protoc_insertion_point(arena_constructor:unary.EmojiReply)
 }
-TranslateReply::TranslateReply(const TranslateReply& from)
+EmojiReply::EmojiReply(const EmojiReply& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  translatedmsg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_translatedmsg().empty()) {
-    translatedmsg_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_translatedmsg(),
+  emoji_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_emoji().empty()) {
+    emoji_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_emoji(),
       GetArena());
   }
-  // @@protoc_insertion_point(copy_constructor:unary.TranslateReply)
+  // @@protoc_insertion_point(copy_constructor:unary.EmojiReply)
 }
 
-void TranslateReply::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TranslateReply_unary_2eproto.base);
-  translatedmsg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+void EmojiReply::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_EmojiReply_unary_2eproto.base);
+  emoji_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-TranslateReply::~TranslateReply() {
-  // @@protoc_insertion_point(destructor:unary.TranslateReply)
+EmojiReply::~EmojiReply() {
+  // @@protoc_insertion_point(destructor:unary.EmojiReply)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void TranslateReply::SharedDtor() {
+void EmojiReply::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  translatedmsg_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  emoji_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-void TranslateReply::ArenaDtor(void* object) {
-  TranslateReply* _this = reinterpret_cast< TranslateReply* >(object);
+void EmojiReply::ArenaDtor(void* object) {
+  EmojiReply* _this = reinterpret_cast< EmojiReply* >(object);
   (void)_this;
 }
-void TranslateReply::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+void EmojiReply::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
-void TranslateReply::SetCachedSize(int size) const {
+void EmojiReply::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const TranslateReply& TranslateReply::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TranslateReply_unary_2eproto.base);
+const EmojiReply& EmojiReply::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_EmojiReply_unary_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void TranslateReply::Clear() {
-// @@protoc_insertion_point(message_clear_start:unary.TranslateReply)
+void EmojiReply::Clear() {
+// @@protoc_insertion_point(message_clear_start:unary.EmojiReply)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  translatedmsg_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  emoji_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TranslateReply::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* EmojiReply::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
@@ -388,12 +387,12 @@ const char* TranslateReply::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // string translatedMsg = 1;
+      // string emoji = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_translatedmsg();
+          auto str = _internal_mutable_emoji();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "unary.TranslateReply.translatedMsg"));
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "unary.EmojiReply.emoji"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -419,43 +418,43 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* TranslateReply::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* EmojiReply::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:unary.TranslateReply)
+  // @@protoc_insertion_point(serialize_to_array_start:unary.EmojiReply)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // string translatedMsg = 1;
-  if (this->translatedmsg().size() > 0) {
+  // string emoji = 1;
+  if (this->emoji().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_translatedmsg().data(), static_cast<int>(this->_internal_translatedmsg().length()),
+      this->_internal_emoji().data(), static_cast<int>(this->_internal_emoji().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "unary.TranslateReply.translatedMsg");
+      "unary.EmojiReply.emoji");
     target = stream->WriteStringMaybeAliased(
-        1, this->_internal_translatedmsg(), target);
+        1, this->_internal_emoji(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:unary.TranslateReply)
+  // @@protoc_insertion_point(serialize_to_array_end:unary.EmojiReply)
   return target;
 }
 
-size_t TranslateReply::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:unary.TranslateReply)
+size_t EmojiReply::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:unary.EmojiReply)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string translatedMsg = 1;
-  if (this->translatedmsg().size() > 0) {
+  // string emoji = 1;
+  if (this->emoji().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_translatedmsg());
+        this->_internal_emoji());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -467,58 +466,58 @@ size_t TranslateReply::ByteSizeLong() const {
   return total_size;
 }
 
-void TranslateReply::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:unary.TranslateReply)
+void EmojiReply::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:unary.EmojiReply)
   GOOGLE_DCHECK_NE(&from, this);
-  const TranslateReply* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<TranslateReply>(
+  const EmojiReply* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<EmojiReply>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:unary.TranslateReply)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:unary.EmojiReply)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:unary.TranslateReply)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:unary.EmojiReply)
     MergeFrom(*source);
   }
 }
 
-void TranslateReply::MergeFrom(const TranslateReply& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:unary.TranslateReply)
+void EmojiReply::MergeFrom(const EmojiReply& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:unary.EmojiReply)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.translatedmsg().size() > 0) {
-    _internal_set_translatedmsg(from._internal_translatedmsg());
+  if (from.emoji().size() > 0) {
+    _internal_set_emoji(from._internal_emoji());
   }
 }
 
-void TranslateReply::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:unary.TranslateReply)
+void EmojiReply::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:unary.EmojiReply)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void TranslateReply::CopyFrom(const TranslateReply& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:unary.TranslateReply)
+void EmojiReply::CopyFrom(const EmojiReply& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:unary.EmojiReply)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool TranslateReply::IsInitialized() const {
+bool EmojiReply::IsInitialized() const {
   return true;
 }
 
-void TranslateReply::InternalSwap(TranslateReply* other) {
+void EmojiReply::InternalSwap(EmojiReply* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  translatedmsg_.Swap(&other->translatedmsg_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  emoji_.Swap(&other->emoji_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata TranslateReply::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata EmojiReply::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -526,11 +525,11 @@ void TranslateReply::InternalSwap(TranslateReply* other) {
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace unary
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::unary::TranslateRequest* Arena::CreateMaybeMessage< ::unary::TranslateRequest >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::unary::TranslateRequest >(arena);
+template<> PROTOBUF_NOINLINE ::unary::EmojiRequest* Arena::CreateMaybeMessage< ::unary::EmojiRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::unary::EmojiRequest >(arena);
 }
-template<> PROTOBUF_NOINLINE ::unary::TranslateReply* Arena::CreateMaybeMessage< ::unary::TranslateReply >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::unary::TranslateReply >(arena);
+template<> PROTOBUF_NOINLINE ::unary::EmojiReply* Arena::CreateMaybeMessage< ::unary::EmojiReply >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::unary::EmojiReply >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

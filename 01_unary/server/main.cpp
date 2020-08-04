@@ -9,7 +9,7 @@
 #include "unary.grpc.pb.h"
 
 static std::map<std::string, std::string> emojis = {
-        {"wink", u8"\U0001F609"},
+        {"wink", u8"\U0001F609"}, //
         {"relaxed" , u8"\U0000263A"},
         {"star" , u8"\U00002B50"},
         {"moon" , u8"\U0001F314"},
@@ -26,9 +26,6 @@ static std::map<std::string, std::string> emojis = {
         {"sleepy" , u8"\U0001F62A"},
 
 };
-
-
-
 
 // Logic and data behind the server's behaviour
 class TranslateServiceImpl final : public unary::Emoji::Service {
