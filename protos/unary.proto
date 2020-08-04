@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package unary;
+
+// The request message containg Orignal message
+message TranslateRequest {
+    string originalMsg = 1;
+}
+
+message TranslateReply {
+    string translatedMsg = 1;
+}
+
+service Translate {
+    rpc TranslateMsg (TranslateRequest) returns (TranslateReply) {}
+}
